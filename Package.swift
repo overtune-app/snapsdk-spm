@@ -22,9 +22,12 @@ let package = Package(
         .target(
             name: "OverTuneSnapSDK",
             dependencies: [
-                .target(name: "SCSDKCoreKit")
+                .target(name: "SCSDKCoreKit"),
+                .target(name: "SCSDKCreativeKit")
                 ]),
         .binaryTarget(name: "SCSDKCoreKit",
+                 path: "Frameworks/iOS/SCSDKCoreKit.xcframework"),
+        .binaryTarget(name: "SCSDKCreativeKit",
                  path: "Frameworks/iOS/SCSDKCreativeKit.xcframework")
     ]
 )
